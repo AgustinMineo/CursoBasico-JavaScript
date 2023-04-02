@@ -4,20 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipulación del DOM básica - Curso Práctico de JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1 >Manipulación del DOM básica</h1>
+    <nav>
+        <img src="./icons/icon_menu.svg" alt="menu" srcset="" class="menu">
 
-        <form id="form">
-            <input id='calculo1' placeholder="Escribe algo aqui">
-            <input id='calculo2'  placeholder="Escribe algo aqui">
-            <button id="btnCalcular" type="button" >Calcular</button>
-            <h1 id="result"></h1>
-        </form>
+        <div class="navbar-left">
+            <img src="./logos/logo_yard_sale.svg" alt="" srcset="" class="logo-nav">
+            <ul>
+                <li>
+                    <a href="#">All</a>
+                </li>
+                <li>
+                    <a href="#">Clothes</a>
+                </li>
+                <li>
+                    <a href="#">Electronic</a>
+                </li>
+                <li>
+                    <a href="#">Furnitures</a>
+                </li>
+                <li>
+                    <a href="#">Toys</a>
+                </li>
+                <li>
+                    <a href="#">Others</a>
+                </li>
+            </ul>
+        </div>
 
-
-
-        <script src="./script.js"> </script>
+        <div class="navbar-right">
+            <li class="navbar-email">exampleEmail@example.com</li>
+            <li class="navbar-shopping-cart">
+                <img src="./icons/icon_shopping_cart.svg" alt="" srcset="">
+                <div>2</div>
+            </li>
+        </div>
+        <div class="desktop-menu inactive">
+            <ul>
+                <li>
+                    <a href="http://" >My orders</a>
+                </li>
+                <li>
+                    <a href="http://">My account</a>
+                </li>
+    
+                <li>
+                    <a href="http://" >Sing out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="./js/main.js"></script>
 </body>
 </html>
