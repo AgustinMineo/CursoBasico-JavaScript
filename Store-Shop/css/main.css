@@ -1,0 +1,612 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --gray-background: #bebeba;
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+/**/
+.inactive{
+    display: none;
+}
+
+/*Main container newPassword*/
+.login{
+width: 100%;
+height: 100vh;
+display: grid;
+place-items: center;
+}
+/* form container from the newPassword.html form*/
+.form-container{
+display: grid;
+grid-template-rows: auto 1fr auto;
+width: 300px;
+place-items: center;
+}
+/*style in the tag a from the form-container*/
+.form-container a{
+color: var(--hospital-green);
+font-size: var(--sm);
+text-align: center;
+text-decoration: none;
+margin-bottom: 40px;
+}
+/*Logo from newPassword*/
+.logo{
+margin-bottom: 25px;
+width: 150px;
+justify-self: center;
+display: none;
+}
+/*Title class from newPassword*/
+.title{
+font-weight: bold;
+font-size: var(--lg);
+margin-bottom: 12px;
+text-align: center;
+}
+
+/*Title create account*/
+.title-account{
+    font-weight: bold;
+    font-size: var(--lg);
+    margin-bottom: 25px;
+    text-align: start;
+    }
+/*subtitle class from the newPassword element*/
+.subtitle{
+font-size: var(--md);
+color: var(--very-light-pink);
+font-weight: 300;
+margin-top: 0;
+margin-bottom: 28px;
+text-align: center;
+}
+/*Form class from the newPassword element*/
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/*Labels from the newPassword element*/
+.label{
+font-size: var(--sm);
+font-weight: bold;
+margin-bottom: 4px;
+}
+/*General Inputs class*/
+.input{
+background-color: var(--text-input-field);
+border: none;
+border-radius: 8px;
+height: 33px;
+font-size: var(--md);
+padding: 5px;
+margin-bottom: 10px;
+}
+.input-name,.input-email,.input-password{
+    margin-bottom: 22px;
+}
+/*Inputs from the newPassword element*/
+.input-password{
+    margin-top: 5px;
+}
+
+/*General Primary button*/
+.primary-button{
+background-color: var(--hospital-green);
+border-radius: 10px;
+height: 38px;
+border: none;
+color: var(--white);
+width: 100%;
+cursor: pointer;
+font-size: var(--md);
+font-weight: bold;
+height: 50px;
+}
+
+/*Submit buttom from the newPassword form*/
+.login-button{
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+/*passwordRecovery2 logo email*/
+.logo-email{
+    border-radius: 90%;
+    background-color: var(--text-input-field);
+    display: flex;
+    margin-bottom: 30px;
+    width: 140px;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+}
+.logo-email img{
+    width: 80%;
+}
+/* resend email text from passwordRecovery2*/
+.resend{
+    font-size: var(--sm);
+    font-weight: bold;
+    color: var(--very-light-pink);
+}
+.resend a{
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+
+/*Input email class from login*/
+.input-email{
+margin-bottom: 20px;
+}
+
+/*General secondary-button*/
+.secondary-button{
+background-color: var(--white);
+border: 1px solid var(--hospital-green);
+width: 100%;
+height: 50px;
+border-radius: 8%;
+cursor: pointer;
+color: var(--hospital-green) ;
+font-size: var(--lg);
+font-weight: bold;
+bottom: 0;
+margin-bottom: 30px;
+}
+
+/*Edit labels and inputs*/
+.value{
+background-color: var(--white);
+border: none;
+border-radius: 8px;
+height: 33px;
+font-size: var(--md);
+padding: 5px;
+margin-bottom: 10px;
+color: var(--very-light-pink);
+font-size: var(--md);
+
+}
+
+/*Secondary buttom editAccount*/
+.secondary-button-edit{
+    background-color: var(--white);
+border: 1px solid var(--hospital-green);
+width: 100%;
+height: 50px;
+border-radius: 8%;
+cursor: pointer;
+color: var(--hospital-green) ;
+font-size: var(--lg);
+font-weight: bold;
+bottom: 0;
+margin-bottom: 30px;
+}
+
+/*sigup button from login element*/
+.signup-button{
+}
+
+/*Card container from index.html*/
+.cards-containers{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,240px);
+    gap: 26px;
+    place-content: center;
+}
+/*product card from index.html*/
+.product-card{
+    width: 240px;
+    margin-right: 25px;
+}
+/*product card img from index.html*/
+.product-card img{
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.product-detail figure img{
+    width: 35px;
+    height: 35px;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+.product-detail figure{
+   margin: 0;
+}
+/*Details from the product from index*/
+.product-detail{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+/*product detail div p styles from index*/
+.product-detail div p:nth-child(1){
+    font-weight: bold;
+}
+.product-detail div p:nth-child(2){
+    font-weight: bold;
+    color: var(--very-light-pink);
+}
+/*desktop menu from menu*/
+.desktop-menu{
+    position: absolute;
+    top: 60.1px;
+    right: 100px;
+    background-color: var(--white);
+    width: 100px;
+    height: auto;
+    border:1px solid var(--very-light-pink) ;
+    border-radius: 5%;
+    padding: 20px 20px 0 20px;
+}
+/*remove defaul styles from the list */
+.desktop-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.desktop-menu ul li{
+   text-align: end;
+   font-weight: bold;
+}
+.desktop-menu ul li:last-child{
+    border-top:1px solid var(--very-light-pink) ;
+    padding-top: 22px;
+ }
+ .desktop-menu ul li:last-child a{
+   color: var(--hospital-green);
+   font-size: var(--sm);
+   text-decoration: none;
+ }
+ .desktop-menu ul li a {
+    color: var(--black);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+/*Mobile menu fromn mobileMenu*/
+.mobile-menu{
+    padding: 24px;
+    
+}
+.mobile-menu a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    /*margin-bottom: 24px;
+    display: inline-block;*/
+}
+.mobile-menu ul {
+    margin: 24px 0 0;
+    padding: 0;
+}
+.mobile-menu ul li {
+    margin-bottom: 24px;
+    list-style: none;
+}
+.mobile-menu .email{
+    font-size: var(--sm);
+    font-weight: 300;
+}
+.mobile-menu ul:nth-child(1){
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.sing-out{
+    font-size: var(--sm);
+    color: var(--hospital-green) !important;
+}
+.mobile-menu ul:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+
+
+/*Styles from order*/
+.my-order,.my-orders{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.my-order-container,.my-orders-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+    width: 300px;
+}
+.my-order-content,.my-orders-content{
+    display: flex;
+    flex-direction: column;
+}
+.shopping-cart figure img{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+/*Nombre del producto*/
+.shopping-cart p:nth-child(2){
+   color: var(--very-light-pink);
+}
+/*Precio del producto*/
+.shopping-cart p:nth-child(3){
+    font-size: var(--md);
+    font-weight: bold;
+ }
+ /*Esquema general de las cards*/
+ .shopping-cart{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+ }
+ /*Removemos margen de la etiqueta figure*/
+ .shopping-cart figure{
+    margin: 0;
+}
+/**/
+.order,.orders{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-input-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px ;
+}
+.orders{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    background-color: var(--white);
+    background-color: var(--text-input-field);
+    align-items: center;
+    margin-bottom: 12px;
+}
+/*Style del primer recuadro de orden (fecha y articulos)*/
+.order, .orders p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+.order,.orders p span:nth-child(1){
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.order,.orders p span:nth-child(2){
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+.order,.orders p:nth-child(2){
+    text-align: end;
+    font-weight: bold;
+}
+
+/*NavBar from navbar*/
+
+/*Menu just for mobile*/
+.menu{
+   display: none;
+}
+.logo-nav{
+    width: 120px;
+}
+.navbar-left ul,.navbar-right ul {
+list-style: none;
+margin:0 ;
+padding: 0;
+display: flex;
+align-items: center;
+height: 60px;
+}
+.navbar-right li{
+list-style: none;
+}
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.navbar-left{
+    display: flex;
+    margin-left: 14px;
+}
+.navbar-left ul{
+    display: flex;
+    margin-left: 14px;
+}
+.navbar-left ul li a,
+.navbar-right ul li a{
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius:10px ;
+}
+.navbar-left ul li a:hover,
+.navbar-right ul li a:hover{
+    text-decoration: none;
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+}
+.navbar-email{
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-right: 16px;
+}
+.navbar-email:hover{
+    cursor: pointer;
+}
+.navbar-shopping-cart{
+    position: relative;
+}
+.navbar-shopping-cart div{
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius:50px;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-right{
+    display: flex;
+    margin: 24px 24px 0 0;
+}
+
+/*Product detail*/
+.product-detail{
+    width: 360px;
+    padding-bottom: 20px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+/*Close img*/
+.product-detail-close{
+    background-color: var(--white);
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    padding: 8px;
+    border-radius: 50%;
+}
+.product-detail-close:hover{
+    cursor: pointer;
+}
+.product-info{
+    margin: 0 24px;
+}
+.product-info p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin: 18px 4px 0 0;
+
+}
+.product-info p:nth-child(2){
+    font-size: var(--md);
+    margin-top:0;
+    margin: 10px 0 15px 0;
+}
+.product-info p:nth-child(3){
+    font-size: var(--sm);
+    margin-top:0;
+    margin: 30px 0 36px 0;
+}
+.product-detail >img:nth-child(2){
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px ;
+}
+.add-to-card-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Dots product img*/
+.dots {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: var(--very-light-pink);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dots span:nth-child(1) {
+    background-color: var(--hospital-green);
+}
+/*Media query mobile*/
+@media (max-width:640px){
+    .logo{
+        display: block;
+    }
+    .form{
+        width: auto;
+    }
+    .secondary-button{
+        width: 80%;
+        position: absolute;
+    }
+    .secondary-button-edit{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .cards-containers{
+        grid-template-columns: repeat(auto-fill,140px);
+    }
+    .product-card{
+        width: 140px;
+    }
+    .product-card-img{
+        width: 140px;
+        height: 140px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .product-detail div p:nth-child(1){
+       font-weight: bold;
+       font-size: var(--md);
+       margin-top: 0;
+       margin-bottom: 4px;
+    }
+    .product-detail div p:nth-child(2){
+        font-size: var(--md);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: var(--very-light-pink);
+     }
+     /*Navbar*/
+     .menu{
+        display: block;
+        height: 24px;
+        margin-top: 16px;
+     }
+     .navbar-left ul {
+        display: none;
+     }
+     .navbar-email{
+        display: none;
+     }
+     /*product detail main container*/
+     .product-detail{
+        width: 100%;
+     }
+}
