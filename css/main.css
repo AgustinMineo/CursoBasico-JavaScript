@@ -384,7 +384,7 @@ align-items: center;
     margin-bottom: 12px;
 }
 /*Style del primer recuadro de orden (fecha y articulos)*/
-.order, .orders p:nth-child(1){
+.orders p:nth-child(1){
     display: flex;
     flex-direction: column;
 }
@@ -401,7 +401,6 @@ align-items: center;
     text-align: end;
     font-weight: bold;
 }
-
 /*NavBar from navbar*/
 
 /*Menu just for mobile*/
@@ -491,6 +490,17 @@ nav{
     display: flex;
     flex-direction: column;
 }
+.product-detail{
+    background-color: var(--white);
+}
+.title-container {
+    display: flex;
+  }
+  .title-container img {
+    transform: rotate(180deg);
+    margin-right: 14px;
+    margin-top: 6px;
+  }
 /*Close img*/
 .product-detail-close{
     background-color: var(--white);
