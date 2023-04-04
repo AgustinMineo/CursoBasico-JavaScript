@@ -202,9 +202,10 @@ margin-bottom: 30px;
 /*Card container from index.html*/
 .cards-containers{
     display: grid;
-    grid-template-columns: repeat(auto-fill,240px);
+    grid-template-columns: repeat(auto-fill, 240px);
     gap: 26px;
     place-content: center;
+    margin-top: 20px;
 }
 /*product card from index.html*/
 .product-card{
@@ -234,10 +235,10 @@ justify-content: space-between;
 align-items: center;
 }
 /*product detail div p styles from index*/
-.product-detail div p:nth-child(1){
+.product-detail,.product-details div p:nth-child(1){
     font-weight: bold;
 }
-.product-detail div p:nth-child(2){
+.product-detail,.product-details div p:nth-child(2){
     font-weight: bold;
     color: var(--very-light-pink);
 }
@@ -490,7 +491,31 @@ nav{
     display: flex;
     flex-direction: column;
 }
-.product-detail{
+.main-container{
+    margin-top: 20px;
+}
+.product-details{
+    width: 100%;
+    background-color: #ACD9B2;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+}
+.product-details figure{
+    margin: 0;
+ }
+ .product-details figure img{
+    width: 35px;
+    height: 35px;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+.product-details div p {
+    margin-left:20px;
+
+}
+.product-detail,.product-details{
     background-color: var(--white);
 }
 .title-container {
@@ -593,13 +618,13 @@ nav{
         border-radius: 20px;
         object-fit: cover;
     }
-    .product-detail div p:nth-child(1){
+    .product-detail, .product-details div p:nth-child(1){
        font-weight: bold;
        font-size: var(--md);
        margin-top: 0;
        margin-bottom: 4px;
     }
-    .product-detail div p:nth-child(2){
+    .product-detail, .product-details div p:nth-child(2){
         font-size: var(--md);
         margin-top: 0px;
         margin-bottom: 0px;
@@ -618,7 +643,7 @@ nav{
         display: none;
      }
      /*product detail main container*/
-     .product-detail{
+     .product-detail,.product-details{
         width: 100%;
      }
      .desktop-menu{
