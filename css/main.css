@@ -495,6 +495,7 @@ nav{
     right: 0;
     display: flex;
     flex-direction: column;
+    background-color: var(--white);
 }
 .main-container{
     margin-top: 20px;
@@ -566,10 +567,18 @@ nav{
     margin: 30px 0 36px 0;
 }
 .product-detail,.product-detail-info >img:nth-child(2){
+    width: 20%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px ;
+    margin-right: 8px;
+}
+.product-detail-info >img:nth-child(2){
     width: 100%;
     height: 360px;
     object-fit: cover;
     border-radius: 0 0 20px 20px ;
+    margin-right: 8px;
 }
 .add-to-card-button{
     display: flex;
@@ -613,14 +622,12 @@ nav{
     }
     .cards-containers{      
         display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: minmax(100px, auto);
-  grid-auto-columns: max-content;
-  grid-gap: 20px;
-
+        grid-template-rows: auto 1fr auto;
+        justify-content: center;
+        align-items: center;
     }
     .product-card{
-        width: 140px;
+        width: 100%;
     }
     .product-card-img{
         width: 140px;
@@ -629,6 +636,7 @@ nav{
         object-fit: cover;
     }
     .product-detail, .product-details,.product-detail-info div p:nth-child(1){
+        
        font-weight: bold;
        font-size: var(--md);
        margin-top: 0;
@@ -639,6 +647,7 @@ nav{
         margin-top: 0px;
         margin-bottom: 0px;
         color: var(--very-light-pink);
+        left: 0px;
      }
      /*Navbar*/
      .menu{
@@ -655,6 +664,26 @@ nav{
      /*product detail main container*/
      .product-detail,.product-details,.product-detail-info{
         width: 100%;
+        background-color: var(--white);
+        height: 100%;
+        justify-content: start;
+        align-items: center;
+        padding-top: 40px;
+     }
+     .product-details{
+        width: 100%;
+        background-color: var(--white);
+        height: 100%;
+        justify-content: space-between;
+        padding-top: 10px;
+        font-weight: bold;
+     }
+     .product-details,.product-detail-info{
+        width: 100%;
+
+     }
+     .my-order-content{
+        width: 70%;
      }
      .desktop-menu{
         display: none;
@@ -663,5 +692,27 @@ nav{
 @media (min-width: 641px){
     .mobile-menu{
         display: none;
+    }
+}
+
+@media (max-width: 815px) and (min-width: 641px){
+    .navbar-email{
+        visibility:hidden ;
+    }
+    .navbar-right li:nth-child(2){
+        position: absolute;
+        padding-left: 20px;
+    }
+    .navbar-left {
+        margin-left: 80px;
+    }
+    .navbar-right{
+        display: flex;
+      padding-top: 20px;
+      margin: 0;
+      left: auto;
+      right: auto;
+      top: auto;
+      bottom: auto;
     }
 }
