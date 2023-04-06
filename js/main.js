@@ -110,3 +110,17 @@ for (product of arr){
 } 
 }
 renderProducts(productList);
+
+/*Product detail */
+const closeProductDetail = document.querySelector('.product-detail-close');
+closeProductDetail.addEventListener('click',toggleCloseProductDetail);
+const statusMainContainerAsideDetail = document.querySelector('.mainContainerAsideDetail');
+
+function toggleCloseProductDetail(){
+    const statusCloseProductDetail = statusMainContainerAsideDetail.classList.contains('inactive');
+
+    if(statusCloseProductDetail){
+        statusMainContainerAsideDetail.classList.add('inactive');
+    }
+    statusMainContainerAsideDetail.classList.toggle('inactive');
+}
